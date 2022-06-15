@@ -1,0 +1,47 @@
+
+<div class="container">
+    <div class="col-md-6 offset-md-3">
+        <h3 style="text-align: center;">Add flight</h3>
+        <form (ngSubmit)="onSubmit()" action="">
+        
+            <div class="container-fluid">
+                <div class="form-group">
+                    <label for=""><b>FlightNo</b></label>
+                    <input type="number" class="form-control" id="flightNo"
+                     [(ngModel)]="flights.flightNo" name="flightNo" 
+                     placeholder="Number">
+                </div>
+                
+                <br>
+    
+                <div class="form-group">
+                    <label for=""><b>FlightModel</b></label>
+                    <input type="text" class="form-control" id="flightModel"
+                     [(ngModel)]="flights.flightModel" name="flightModel">
+                </div>
+    
+                <br>
+    
+                <div class="form-group">
+                    <label for=""><b>CarrierName</b></label>
+                    <input type="text" class="form-control" id="carrierName"
+                     [(ngModel)]="flights.carrierName" name="carrierName">
+                </div>
+    
+                <br>
+    
+                <div class="form-group">
+                    <label for=""><b>SeatCapacity</b></label>
+                    <input type="number" class="form-control" id="seatCapacity"
+                     [(ngModel)]="flights.seatCapacity" name="seatCapacity">
+                </div>
+    
+                <br>
+    
+            </div>
+            <br>
+        
+            <button class="btn btn-primary" type="submit" style="margin-bottom: 30px;margin-left: 47%;">submit</button>
+        </form>
+    </div>
+    </div>

@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-light navBackground">
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <!-- <li class="nav-item">
+                <a class="nav-link" routerLink="/booking-confirm">Booking Confirm</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link"routerLink="booking/createBooking" routerLinkActive="active">Create Booking</a> 
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="flight/allFlight" routerLinkActive="active">Flight-Details</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link"routerLink="api/addpassenger" routerLinkActive="active">Add Passenger</a> 
+            </li>
+
+
+
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="airport/allairport" routerLinkActive="active">Airport Details</a>
+            </li>
+        </ul>
+    </div>
+    <button class="btn btn-dark btn-md" (click)="doLogout()">Logout</button>
+</nav>
+

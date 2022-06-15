@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="passenger-container">
+         <h2 class="header">ADD PASSENGER</h2>
+            
+         <div class="form">
+             <form [formGroup]="addPassenger" (ngSubmit)="saveData">
+               <div class="form-group">
+                 <label class="form-label">passengername</label><br>
+                 <input type="text" id="name"  placeholder="passengername" 
+                 formControlName="passengerName">
+               </div><br>
+  
+                <div class="form-group">
+                  <label>  age </label><br>
+                  
+                 <input type="number" id="age" placeholder="age" 
+                 formControlName="age">
+                  
+                 
+                  </div><br>
+          <div class="form-group">
+              <label> uin </label><br>
+              <input type="number" id="uin"  placeholder="uin" 
+              formControlName="uin">
+              
+          </div><br>
+          <div class="form-group">
+            <label>luggage</label><br>
+            <input type="number" id="number" placeholder="lauggage" 
+            formControlName="lauggage">
+            
+        </div><br>
+        <button type="submit" (click)="saveData()"
+        class="btn btn-info" >Submit</button>
+    </form>
+  </div>
+  </div>
+  </div>
+  

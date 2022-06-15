@@ -1,0 +1,23 @@
+
+<h2 class="text-center">Flight List</h2> <br> <br>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>flightNo</th>
+            <th>Flightmodel</th>
+            <th>carrierName</th>
+            <th>seatCapacity</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let flight  of flight  ">
+           <td> {{flight.flightNo}} </td>
+           <td> {{flight.flightModel}} </td>
+           <td> {{flight.carrierName}} </td>
+           <td> {{flight.seatCapacity}} </td>
+           
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,28 @@
+<br>
+<br>
+<br>
+<br>
+<h2 class="text-center">PASSENGER DETAILS</h2> <br> <br>
+
+<table class="table">
+    <thead>
+        <tr>
+            <!-- <th>pnr</th> -->
+            <th>passengerName</th>
+            <th>age</th>
+            <th>uin</th>
+            <th>luggage</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let passenger of passenger">
+           <!-- <td> {{passenger.pnr}} </td> -->
+           <td> {{passenger.passengerName}} </td>
+           <td> {{passenger.age}} </td>
+           <td> {{passenger.uin}} </td>
+           <td> {{passenger.luggage}} </td>
+           
+        </tr>
+    </tbody>
+</table>

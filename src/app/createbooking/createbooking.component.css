@@ -1,0 +1,55 @@
+/* .container{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(186, 149, 149);
+    margin-left: 300px;
+}
+.header{
+    text-align: center;
+    color: rgb(219, 88, 88);
+
+}
+.BookingFlight-container{
+    height: 550px;
+    background-color: rgb(235, 214, 187);
+    padding: 16px;
+    width: 300px;
+
+}
+.form-container{
+    margin-top: 50px;
+    display: flax;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+
+}
+.form-group{
+    height: 25px;
+    width: 100%;
+
+}
+.form-group input{
+    height: 25px;
+    width: 100%;
+}
+.form-group label{
+    margin-bottom: 5px;
+    display: inline-block;
+
+}
+button{
+    background-color: rgb(94, 9, 240);
+    padding: 8px 12px;
+    color: rgb(178, 197, 215);
+    margin-top: 16px;
+
+}
+button:hover{
+    color: black;
+    background-color: aquamarine;
+} */

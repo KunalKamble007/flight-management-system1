@@ -1,0 +1,27 @@
+.container {
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightskyblue;
+}
+.header {
+    text-align:center;
+    color:black;
+}
+.airport-container{
+    height: 400px;
+    background-color: antiquewhite;
+    padding:16px;
+    width: 300px;
+}
+.form-container
+{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}

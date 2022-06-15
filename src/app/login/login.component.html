@@ -1,0 +1,26 @@
+<div class="container-fluid container-style">
+    <div class="card col-sm-4 p-5 my-5">
+        <div class="card-body">
+            <h3 class="card-title text-center">Flight Management Login</h3>
+            <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+                <div class="form-group my-4">
+                    <label for="">Username</label>
+                    <input type="text" id="username" #username="ngModel" name="username" [(ngModel)]="loginDetails.username" class="form-control" placeholder="Username" required autofocus>
+                    <div *ngIf="username.untouched == false && username.touched == true && username.invalid == true">
+                        <p class="errMsg">Username can't be empty</p>
+                    </div>
+                </div>
+                <div class="form-group my-4">
+                    <label for="">Password</label>
+                    <input type="password" id="password" #password="ngModel" name="password" [(ngModel)]="loginDetails.password" class="form-control" placeholder="Password" required>
+                    <div *ngIf="password.untouched == false && password.touched == true && password.invalid == true">
+                        <p class="errMsg">Password can't be empty</p>
+                    </div>
+                </div>
+                <button [disabled]="loginForm.form.invalid" type="submit" class="btn btn-md btn-dark mb-2">Login</button>
+            </form>
+            <a class="link-primary" routerLink="signup">New User? Click here to Signup!!</a> <br />
+            <a class="link-primary">Forgot Password?</a>
+        </div>
+    </div>
+</div>

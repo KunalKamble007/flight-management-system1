@@ -1,0 +1,35 @@
+<div class="col-md-6 offset-md-3">
+    <h3 style="text-align: center;">Add Booking</h3>
+    <form (ngSubmit)="onSubmit()" action="">
+    
+        <div class="container">
+            <div class="form-group">
+                <label for=""><b>Booking ID:</b></label>
+                <input type="number" class="form-control" id="bookingId"
+                 [(ngModel)]="booking.bookingId" name="bookingId" 
+                 placeholder="code">
+            </div>
+            
+            <br>
+
+            <div class="form-group">
+                <label for=""><b>Booking Date:</b></label>
+                <input type="date" class="form-control" id="bookingDate"
+                 [(ngModel)]="booking.bookingDate" name="bookingDate">
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for=""><b>No Of Passengers:</b></label>
+                <input type="number" class="form-control" id="noOfPassengers"
+                 [(ngModel)]="booking.noOfPassengers" name="noOfPassengers">
+            </div>
+
+            <br>
+        </div>
+        <br>
+    
+        <button class="btn btn-primary" type="submit" style="margin-bottom: 30px;margin-left: 47%;">submit</button>
+    </form>
+</div>

@@ -1,0 +1,37 @@
+<div class="col-md-6 offset-md-3">
+    <h3 style="text-align: center;">Add Airport</h3>
+    <form (ngSubmit)="onSubmit()" action="">
+    
+        <div class="container">
+            <div class="form-group">
+                <label for=""><b>airportCode</b></label>
+                <input type="text" class="form-control" id="airportCode"
+                 [(ngModel)]="airport.airportCode" name="airportCode" 
+                 placeholder="code">
+            </div>
+            
+            <br>
+
+            <div class="form-group">
+                <label for=""><b>airportName</b></label>
+                <input type="text" class="form-control" id="airportName"
+                 [(ngModel)]="airport.airportName" name="airportName">
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <label for=""><b>airportLocation</b></label>
+                <input type="text" class="form-control" id="airportLocation"
+                 [(ngModel)]="airport.airportLocation" name="airportLocation">
+            </div>
+
+            <br>
+
+
+        </div>
+        <br>
+    
+        <button class="btn btn-primary" type="submit" style="margin-bottom: 30px;margin-left: 47%;">submit</button>
+    </form>
+</div>

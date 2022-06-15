@@ -1,0 +1,38 @@
+<div class="container-fluid container-style">
+    <div class="card col-sm-4 p-5 my-5">
+        <div class="card-body">
+            <h3 class="card-title text-center">Flight Management Signup</h3>
+            <form #signupForm="ngForm" (ngSubmit)="onSubmit()">
+                <div class="form-group my-4">
+                    <label for="">Username</label>
+                    <input type="text" id="username" #username="ngModel" name="username" [(ngModel)]="signupDetails.userName" class="form-control" placeholder="Username" required autofocus>
+                    <div *ngIf="username.untouched == false && username.touched == true && username.invalid == true">
+                        <p class="errMsg">Username can't be empty</p>
+                    </div>
+                </div>
+                <div class="form-group my-4">
+                    <label for="">Email</label>
+                    <input type="email" id="email" #email="ngModel" name="email" [(ngModel)]="signupDetails.userEmail" class="form-control" placeholder="Email" required>
+                    <div *ngIf="email.untouched == false && email.touched == true && email.invalid == true">
+                        <p class="errMsg">Email can't be empty</p>
+                    </div>
+                </div>
+                <div class="form-group my-4">
+                    <label for="">Phone</label>
+                    <input type="number" id="phone" #phone="ngModel" name="phone" [(ngModel)]="signupDetails.userPhone" class="form-control" placeholder="Phone Number">
+                </div>
+                <div class="form-group my-4">
+                    <label for="">Password</label>
+                    <input type="password" id="password" #password="ngModel" name="password" [(ngModel)]="signupDetails.userPassword" class="form-control" placeholder="Password" required>
+                    <div *ngIf="password.untouched == false && password.touched == true && password.invalid == true">
+                        <p class="errMsg">Password can't be empty</p>
+                    </div>
+                </div>
+                <button [disabled]="signupForm.form.invalid" type="submit" class="btn btn-md btn-dark mb-2">Signup</button>
+            </form>
+            <a class="link-primary" routerLink="">Already a user? Click here to Login!!</a> <br />
+        </div>
+    </div>
+</div>
+
+
